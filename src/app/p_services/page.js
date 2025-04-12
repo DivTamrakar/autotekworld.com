@@ -26,7 +26,7 @@ export default function PServices() {
                             <div className="card-body">
                                 <h2 className="card-title p-services-card-title">Annual Maintenance Contract (AMC)</h2>
                                 <p className="card-text p-services-card-text">
-                                    Our Annual Maintenance Contract (AMC) services are designed to provide businesses with peace of mind by ensuring their equipment functions optimally with minimal downtime. Regular maintenance helps in preventing unexpected failures, extending the lifespan of machines, and improving overall productivity.
+                                    Our Annual Maintenance Contract(AMC)services are designed to provide businesses with peace of mind by ensuring their equipment functions optimally with minimal downtime. Regular maintenance helps in preventing unexpected failures, extending the lifespan of machines, and improving overall productivity.
                                 </p>
                             </div>
                         </div>
