@@ -21,4 +21,5 @@ A static website for showcasing Autotekworld, built with HTML, CSS, JavaScript, 
 ## 🖼️ Demo
 
 ![Home Page](./demo-images/homepage.png)
+![Product](./demo-images/product.png)
 ![About Section](./demo-images/about.png)
