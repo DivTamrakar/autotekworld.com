@@ -1,0 +1,171 @@
+/* src/styles/navbar.css */
+.navbar-collapse li{
+  font-size: 1.0rem;
+}
+
+.custom-navbar {
+  background-color: #ffffff !important;
+  font-weight: bold;
+  font-size: 0.9rem;
+  border-bottom: solid !important;
+  border-bottom-color: #c90300 !important;
+}
+.custom-navbar button {
+  font-size: 1.0rem;
+  background-color: revert;
+  border-radius: 21px;
+  border-color: #cb0002;
+}
+.custom-navbar button:hover {
+  background-color: #cb0002 !important;
+}
+
+.custom-navbar input:hover {
+  border-color: red; /* Change to your desired color */
+  font-size: 1.0rem;
+}
+
+.custom-navbar input {
+  border-color: #cb0002;
+  font-size: 1.0rem;
+}
+
+.custom-navbar img {
+  width: 55px;
+  height: 55px;
+}
+
+.custom-navbar ul {
+  margin-left: auto;
+  text-align: center;
+}
+
+.custom-navbar ul li {
+  transition: text-shadow 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler {
+  color: #7cd0ec;
+}
+
+/* Mega Dropdown Styling */
+.mega-dropdown {
+  position: static !important;
+}
+
+/* Properly Centered & Sized Mega Dropdown */
+.mega-menu {
+  width: 80%; /* Slightly wider for better spacing */
+  max-width: 900px; /* Ensures it doesn’t exceed screen width */
+  left: 50% !important;
+  transform: translateX(-50%);
+  padding: 12px 15px !important; /* Slightly reduced padding */
+  background: white;
+  position: absolute !important;
+  z-index: 1000 !important;
+  border-top: 3px solid #cb0002 !important;
+  box-shadow: 0px 4px 10px rgb(0 0 0 / 37%);
+  margin-top: 2px !important;
+  max-height: 400px; /* Reduced height */
+  overflow-y: auto; /* Enables scrolling if content overflows */
+}
+
+/* Ensures No Overlapping Text */
+.mega-menu .col-md-4 {
+  padding: 8px 12px; /* More compact spacing */
+  min-width: 200px; /* Keeps content properly aligned */
+  max-width: 300px; /* Prevents excessive width */
+}
+
+/* Ensures Proper Text Alignment */
+.mega-menu h6 {
+  font-weight: bold;
+  margin-bottom: 8px;
+  padding-left: 8px; /* Adds space between text & border */
+  font-size: 14px; /* Smaller font for better spacing */
+}
+
+/* Better Font & Padding */
+.mega-menu .dropdown-item {
+  display: block;
+  padding: 8px 12px; /* Ensures no text touches the edges */
+  font-size: 13px; /* Slightly smaller text for better fit */
+  white-space: nowrap; /* Prevents text from breaking */
+}
+
+/* Remove hover effect color from the font on mega menu */
+.mega-menu .dropdown-item:hover {
+  background-color: transparent; /* Remove background color on hover */
+  padding-left: 12px !important; /* Remove spacing on hover */
+  transition: none !important; /* Remove transition effect */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+  .mega-menu {
+      width: 95%; /* Uses more space on smaller screens */
+      max-width: 100%; /* Ensures full fit */
+      padding: 10px !important;
+      max-height: 350px; /* Further reduces height */
+  }
+
+  .mega-menu .col-md-4 {
+      min-width: 100%; /* Full width on small screens */
+      max-width: 100%;
+      padding: 5px 10px;
+  }
+
+  .mega-menu h6 {
+      font-size: 13px; /* Reduces title size for compact view */
+  }
+
+  .mega-menu .dropdown-item {
+      font-size: 12px; /* Slightly smaller for readability */
+      padding: 6px 10px;
+  }
+}
+
+/* Show Mega Menu on Hover */
+.nav-item.dropdown:hover .mega-menu {
+  display: block !important;
+}
+
+/* Hide Mega Menu by Default */
+.mega-menu {
+  display: none;
+}
+
+/* Smooth Transition Effect */
+.nav-item.dropdown:hover > .nav-link {
+  transition: all 0.3s ease-in-out;
+}
+
+/* View All Categories Button */
+.view-all-btn button {
+  font-size: 1.0rem;
+  background-color: revert;
+  border-radius: 21px;
+  border-color: #cb0002;
+}
+
+/* Button on Hover */
+.view-all-btn:hover {
+  background-color: #cb0002 !important;
+}
+
+/* Ensure Space Between Button & Categories */
+.mega-menu .col-12 {
+  padding-bottom: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .col-12.text-end {
+      text-align: center !important; /* Center the button on small screens */
+  }
+
+  .view-all-btn {
+      width: 100%; /* Full width on small screens */
+  }
+}

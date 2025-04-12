@@ -1,0 +1,230 @@
+/* Make modal pop up smoothly */
+.product-page .custom-modal {
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.product-page .custom-modal.show {
+    opacity: 1;
+}
+
+/* Modal Content */
+.product-page .modal-content-custom {
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Style */
+.product-page .modal-header-custom {
+    background: #cc0704;;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+/* close button */
+
+.product-page .btn-close {
+    background-color: white;
+    border: none;
+    opacity: 1;
+}
+
+.product-page .btn-close:hover {
+    background-color: #f8f9fa;
+}
+
+
+
+
+
+
+
+/* Scrollable Content */
+.product-page .content-container {
+    width: 50%;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    background: #f8f9fa;
+    border-left: 2px solid #ddd;
+}
+
+
+
+.product-page .card {
+    height: 400px; /* Maintain a fixed height */
+    border-radius: 10px; /* Rounded corners for a modern look */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+}
+.product-page .card h5 {
+    font-size: 1.20rem; /* Larger font size for title */
+}
+
+.product-page .card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stylish shadow */
+}
+
+.product-page .card img {
+    height: 200px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    padding: 0;
+    background: #fff;
+    margin: auto;
+}
+
+
+.product-page .carousel-inner {
+    align-items: center;
+    height: 100%;
+}
+
+.product-page .carousel-item {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.product-page .carousel-control-prev, 
+.product-page .carousel-control-next {
+    filter: invert(1); /* Make controls visible */
+    opacity: 0.7;
+}
+
+.product-page .carousel-control-prev:hover, 
+.product-page .carousel-control-next:hover {
+    opacity: 1;
+}
+
+.product-page .btn-primary {
+    background: linear-gradient(34deg, #ce0203, hsl(240deg 5.86% 19.34%)); /* Stylish gradient */
+    border: none;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.product-page .btn-primary:hover {
+    background: linear-gradient(45deg, #ff9800, #ff5722);
+    transform: scale(1.05);
+}
+
+
+/* Centering the Read More Button */
+.product-page .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+
+/* WhatsApp Button Styling - Only for Product Page */
+.product-page .whatsapp-link {
+    background-color: #25D366; /* WhatsApp Green */
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-page .whatsapp-link:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+.product-page .whatsapp-link svg {
+    margin-right: 8px;
+    font-size: 24px;
+    color: white;
+}
+
+.product-page .whatsapp-number {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+.product-page .d-flex {
+    gap: 10px; /* Spacing between buttons */
+}
+
+.product-page .whatsapp-icon {
+    color: #25D366; /* WhatsApp original green */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.product-page .whatsapp-icon:hover {
+    transform: scale(1.1);
+}
+
+.product-page .enquiry-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #007bff; /* Blue color */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.product-page .enquiry-button:hover {
+    background-color: #0056b3;
+}
+
+
+.product-page .whatsapp {
+    color: #25D366; /* WhatsApp original green */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 50%
+}
+
+.product-page .whatsapp:hover {
+    transform: scale(1.2); /* Slight zoom effect */
+    box-shadow: 0px 0px 10px rgba(37, 211, 102, 0.5); /* Green glow effect */
+    border-radius: 50%
+
+}
+
+.interest-button {
+    background: linear-gradient(45deg, #660001, #cc0704);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.interest-button:hover {
+    background: linear-gradient(45deg, #feb47b, #ff7e5f);
+    transform: scale(1.05);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.interest-button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,132 @@
+.p-services-container {
+    margin-top: 50px;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.p-services-container.fade-in {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Heading Animation */
+/* Fade-in Popup Effect for Heading */
+.popup-heading {
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in .popup-heading {
+    opacity: 1;
+    transform: translateY(0);
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+/* Card Pop-up Effect */
+.p-services-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.fade-in .p-services-card {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.p-services-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+.p-services-card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Section Styling */
+.p-services-section {
+    margin-bottom: 40px;
+}
+
+/* Subtitles */
+.p-services-subtitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* List Styling */
+.p-services-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.p-services-list li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+    color: #555;
+}
+
+.p-services-list li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .p-services-subtitle {
+        font-size: 1.6rem;
+    }
+
+    .p-services-list li {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .p-services-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .p-services-list li {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .p-services-subtitle {
+        font-size: 1.4rem;
+    }
+
+    .p-services-list li {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .p-services-subtitle {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .p-services-list li {
+        font-size: 0.8rem;
+    }
+}

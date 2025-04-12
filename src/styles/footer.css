@@ -1,0 +1,238 @@
+.footer_bg {
+    background-color: #eceeed !important;
+  }
+  
+  .footer_bg a {
+    color: blue !important;
+    text-decoration: none;
+  }
+  
+  .footer_bg a:hover {
+    color: red !important; /* Change to your desired hover color */
+  }
+  
+  .footer_bg .button {
+    font-size: 1.0rem;
+    background-color: revert;
+    border-radius: 21px;
+    border-color: #cb0002 !important;
+  }
+  
+  .footer_bg .text-white a {
+    color: white !important;
+  }
+  
+  .footer_bg .text-white a:hover {
+    color: #ddd !important; /* Change to your desired hover color */
+  }
+  
+  .footer_bg .text-dark a {
+    color: #333 !important;
+  }
+  
+  .footer_bg .text-dark a:hover {
+    color: #555 !important; /* Change to your desired hover color */
+  }
+  
+  .footer_bg .text-uppercase {
+    text-transform: uppercase;
+  }
+  
+  .footer_bg .fw-bold {
+    font-weight: bold;
+  }
+  
+  .footer_bg .me-2 {
+    margin-right: 0.5rem;
+  }
+  
+  .footer_bg .me-3 {
+    margin-right: 1rem;
+  }
+  
+  .footer_bg .p-2 {
+    padding: 0.5rem;
+  }
+  
+  .footer_bg .p-3 {
+    padding: 1rem;
+  }
+  
+  .footer_bg .p-4 {
+    padding: 1.5rem;
+  }
+  
+  .footer_bg .mt-5 {
+    margin-top: 3rem;
+  }
+  
+  .footer_bg .mb-3 {
+    margin-bottom: 1rem;
+  }
+  
+  .footer_bg .mt-0 {
+    margin-top: 0;
+  }
+  
+  .footer_bg .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .footer_bg .d-inline-block {
+    display: inline-block;
+  }
+  
+  .footer_bg .text-center {
+    text-align: center;
+  }
+  
+  .footer_bg .text-md-start {
+    text-align: left;
+  }
+  
+  .footer_bg .container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  
+  .footer_bg .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .footer_bg .col-md-3,
+  .footer_bg .col-md-4,
+  .footer_bg .col-md-2 {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  @media (min-width: 320px) {
+    .footer_bg .col-md-3 {
+      flex: 0 0 auto;
+      width: 100%;
+    }
+  
+    .footer_bg .col-md-4 {
+      flex: 0 0 auto;
+      width: 100%;
+    }
+  
+    .footer_bg .col-md-2 {
+      flex: 0 0 auto;
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .footer_bg .col-md-3 {
+      flex: 0 0 auto;
+      width: 25%;
+    }
+  
+    .footer_bg .col-md-4 {
+      flex: 0 0 auto;
+      width: 33.333333%;
+    }
+  
+    .footer_bg .col-md-2 {
+      flex: 0 0 auto;
+      width: 16.666667%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .footer_bg .col-lg-4 {
+      flex: 0 0 auto;
+      width: 33.333333%;
+    }
+  
+    .footer_bg .col-lg-3 {
+      flex: 0 0 auto;
+      width: 25%;
+    }
+  
+    .footer_bg .col-lg-2 {
+      flex: 0 0 auto;
+      width: 16.666667%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .footer_bg .col-xl-3 {
+      flex: 0 0 auto;
+      width: 25%;
+    }
+  
+    .footer_bg .col-xl-4 {
+      flex: 0 0 auto;
+      width: 33.333333%;
+    }
+  
+    .footer_bg .col-xl-2 {
+      flex: 0 0 auto;
+      width: 16.666667%;
+    }
+  }
+
+
+  /* Deals in HSN Code Section */
+  @media (max-width: 768px) {
+    .hsn-code-table th:nth-child(2),
+    .hsn-code-table td:nth-child(2) {
+      display: none;
+      text-align: center !important;
+    }
+  }  
+
+  .hsn-code-section {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .hsn-code-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    
+  }
+
+  .hsn-code-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+
+  .hsn-code-table th,
+  .hsn-code-table td {
+    border: 1px solid rgb(205, 9, 4); /* Border color */
+    padding: 8px;
+    text-align: left; /* Align text to the left */
+  }
+
+  .hsn-code-table th {
+    background-color: rgb(205, 9, 4); /* Background color */
+    color: white; /* Text color */
+    font-weight: bold;
+  }
+
+  .hsn-code-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .hsn-code-table tr:hover {
+    background-color: #ddd;
+  }
+
+  /* Responsive styles for small screens */
+  @media (max-width: 768px) {
+    .hsn-code-section h2 {
+      font-size: 1.5rem;
+    }
+
+    .hsn-code-table th,
+    .hsn-code-table td {
+      font-size: 0.875rem;
+    }
+  }

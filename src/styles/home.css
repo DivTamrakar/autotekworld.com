@@ -1,0 +1,333 @@
+.home-page {
+  /* Carousel container */
+  .carousel-container {
+    height: 77vh;
+  }
+
+  /* Ensure images fit properly */
+  .carousel-item img {
+    width: 100%;
+    height: 77vh;
+    object-fit: cover;
+  }
+
+  /* Make captions fully visible on all screens */
+  .carousel-caption {
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    text-align: center;
+    position: absolute;
+  }
+
+  /* Ensure text is visible even on small screens */
+  .carousel-caption h5 {
+    font-size: 1.8rem; /* Large screens */
+    font-weight: bold;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem; /* Large screens */
+  }
+
+  /* Medium screens */
+  @media (max-width: 768px) {
+    .carousel-caption {
+      width: 95%;
+      bottom: 5px;
+    }
+    .carousel-caption h5 {
+      font-size: 1.4rem;
+    }
+    .carousel-caption p {
+      font-size: 0.9rem;
+    }
+  }
+
+  /* Small screens (320px - 576px) */
+  @media (max-width: 576px) {
+    .carousel-caption {
+      width: 98%;
+      bottom: 0;
+      padding: 5px;
+    }
+    .carousel-caption h5 {
+      font-size: 1.2rem;
+    }
+    .carousel-caption p {
+      font-size: 0.8rem;
+    }
+  }
+
+  /* Extra Small Screens (320px) */
+  @media (max-width: 320px) {
+    .carousel-caption {
+      width: 100%;
+      bottom: 0;
+      padding: 2px;
+    }
+    .carousel-caption h5 {
+      font-size: 1rem;
+    }
+    .carousel-caption p {
+      font-size: 0.7rem;
+    }
+  }
+
+  /* Business Information Section */
+  .business-info {
+    margin-top: 20px !important;
+  }
+
+  .business-info .col-md-4 {
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .business-info .col-md-4.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .business-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border: 0px solid #ffffff;
+    padding: 4px;
+    background-color: #cd0904;
+  }
+
+  /* Remove color and underline from links */
+  .business-info a {
+    color: inherit; /* Inherit color from parent */
+    text-decoration: none; /* Remove underline */
+  }
+
+  /* Specific styles for GST icon */
+  .gst-icon {
+    background-color: white !important;
+    border: 4px solid #cd0904 !important; /* Thick border */
+  }
+
+  /* Business Essentials Section */
+  .business-essentials {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-in-out;
+    padding: 50px 0; /* Top and bottom padding */
+  }
+
+  .business-essentials h1 {
+    font-size: 100%;
+  }
+
+  .business-essentials.in-view {
+    opacity: 1;
+    transform: translateY(0);
+    padding-top: 30px;
+    font-size: 3.2rem;
+  }
+
+  /* More Tool Selection Section */
+  .more-tools {
+    margin-top: 100px !important;
+  }
+
+  .more-tools .col-md-2 {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .more-tools .col-md-2.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .more-tools .card {
+    background-color: rgb(255 255 255 / 0%) !important; /* Transparent background */
+    border: none;
+    transition: transform 0.3s ease-in-out;
+    height: 100%; /* Ensure cards take full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .more-tools .card:hover {
+    transform: scale(1.05);
+  }
+
+  .more-tools .card-img-top {
+    height: 180px; /* Fixed height for images */
+  }
+
+  .more-tools .card-body {
+    text-align: center;
+    flex-grow: 1; /* Ensure card body takes remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .more-tools .card-title {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .more-tools .card-text {
+    flex-grow: 1;
+    margin-bottom: 1rem;
+  }
+
+  .more-tools .btn-hover {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: auto;
+  }
+
+  .more-tools .btn-hover:hover {
+    background-color: #0056b3;
+  }
+
+  /* Responsive styles for small screens */
+  @media (max-width: 768px) {
+    .more-tools .col-md-2 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .more-tools .col-md-2 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+
+  /* More Tool Selection Head */
+  .more-tool-selection-head {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.5s ease-in-out;
+  }
+
+  .more-tool-selection-head.in-view {
+    opacity: 1;
+    transform: translateY(0);
+    margin-top: 100px !important;
+  }
+
+  /* Product Video Section */
+  .product-video-section .card {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .product-video-section .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .video-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1050;
+  }
+
+  .video-popup-content {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    max-width: 800px;
+    width: 90%;
+    position: relative;
+  }
+
+  .video-popup-content .btn-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: none;
+  }
+
+  .whatsapp-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .whatsapp-button {
+    display: flex;
+    justify-content: center;
+    gap: 8px; /* Space between icon and text */
+    font-weight: bold;
+    font-size: 8px;
+  }
+
+  .see-all-products-button {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    background-color: #80d259;
+  }
+
+  .see-all-products-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+
+  /* Read More Link to Product Page */
+  .read-more-btn {
+    
+  }
+
+  .read-more-btn:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    text-decoration: none; /* Ensure no underline on hover */
+  }
+
+  /* Additional styles for the enquiry popup */
+  .enquiry-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000; /* Increased z-index for visibility */
+  }
+
+  .enquiry-popup-content {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 400px; /* Set a smaller max width for the popup */
+    width: 90%; /* Responsive width */
+    position: relative;
+  }
+
+}
